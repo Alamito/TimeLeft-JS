@@ -1,0 +1,51 @@
+@media screen and (max-width: 799px) {
+  .gridContainer {
+    grid-template-rows: 9vh 12vh 30vh 12vh 12vh 20vh;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 5rem;
+  }
+
+  .infoLow {
+    font-size: 2rem;
+  }
+
+  .gridContainer div:nth-child(2),
+  .gridContainer div:nth-child(11) {
+    font-size: 4rem;
+  }
+
+  .infoHigh {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .gridContainer {
+    grid-template-rows: 19vh 12vh 15vh 8vh 12vh 12vh;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 3rem;
+  }
+
+  .infoLow {
+    font-size: 1.5rem;
+  }
+
+  .gridContainer div:nth-child(2),
+  .gridContainer div:nth-child(11) {
+    font-size: 3rem;
+  }
+
+  .infoHigh {
+    font-size: 3.5rem;
+  }
+}

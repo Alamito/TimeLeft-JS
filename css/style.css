@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Martel Sans", sans-serif;
+}
+
+body {
+  background: rgb(2, 48, 71);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 48, 71, 1) 47%,
+    rgba(33, 158, 188, 1) 100%
+  );
+  overflow-y: hidden;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 5fr 5fr 1fr;
+  grid-template-rows: 4vh 12vh 40vh 12vh 12vh 15vh;
+  grid-template-areas:
+    "event event event event event event"
+    "infoFaltam infoFaltam infoFaltam infoFaltam infoFaltam infoFaltam"
+    ". days hours minutes seconds ."
+    ". infoDays infoHours infoMinutes infoSeconds ."
+    "infoPara infoPara infoPara infoPara infoPara infoPara"
+    "infoEvent infoEvent infoEvent infoEvent infoEvent infoEvent";
+}
+
+.event {
+  grid-area: event;
+  display: flex;
+  justify-content: end;
+}
+
+.gridContainer div:nth-child(2) {
+  grid-area: infoFaltam;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.days {
+  grid-area: days;
+  background-color: #fff;
+  color: #343a40;
+}
+
+.hours {
+  grid-area: hours;
+  background-color: #fff;
+  color: #343a40;
+}
+
+.minutes {
+  grid-area: minutes;
+  background-color: #fff;
+  color: #343a40;
+}
+
+.seconds {
+  grid-area: seconds;
+  background-color: #fff;
+  color: #343a40;
+}
+
+.gridContainer div:nth-child(7) {
+  grid-area: infoDays;
+  background-color: #343a40;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.gridContainer div:nth-child(8) {
+  grid-area: infoHours;
+  background-color: #343a40;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.gridContainer div:nth-child(9) {
+  grid-area: infoMinutes;
+  background-color: #343a40;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.gridContainer div:nth-child(10) {
+  grid-area: infoSeconds;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.gridContainer div:nth-child(11) {
+  grid-area: infoPara;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.gridContainer div:nth-child(12) {
+  grid-area: infoEvent;
+  color: #fff;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  font-weight: bold;
+  border-radius: 15px 15px 0 0;
+}
+
+.days,
+.hours,
+.minutes {
+  margin-right: 15px;
+}
+
+.infoLow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.1rem;
+  border-radius: 0 0 15px 15px;
+}
+
+.infoHigh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5.5rem;
+  font-weight: bold;
+}
