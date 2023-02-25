@@ -1,51 +1,55 @@
-@media screen and (max-width: 799px) {
-  .gridContainer {
-    grid-template-rows: 9vh 12vh 30vh 12vh 12vh 20vh;
-  }
+@media screen and (max-width: 918px) {
+    .gridContainer {
+        grid-template-rows: 4vh 12vh 25vh 12vh 12vh 15vh;
+    }
 
-  .days,
-  .hours,
-  .minutes,
-  .seconds {
-    font-size: 5rem;
-  }
+    .gridContainer div:nth-child(2), .gridContainer div:nth-child(11) {
+        font-size: 7vw;
+    }
 
-  .infoLow {
-    font-size: 2rem;
-  }
-
-  .gridContainer div:nth-child(2),
-  .gridContainer div:nth-child(11) {
-    font-size: 4rem;
-  }
-
-  .infoHigh {
-    font-size: 5rem;
-  }
+    .infoHigh {
+        font-size: 10vw;
+    }
 }
 
-@media screen and (max-width: 529px) {
-  .gridContainer {
-    grid-template-rows: 19vh 12vh 15vh 8vh 12vh 12vh;
-  }
+@media screen and (max-width: 683px) {
+    .gridContainer {
+        grid-template-rows: 4vh 12vh 15vh 7vh 12vh 15vh;
+    }
 
-  .days,
-  .hours,
-  .minutes,
-  .seconds {
-    font-size: 3rem;
-  }
+    .gridContainer div:nth-child(2), .gridContainer div:nth-child(11) {
+        font-size: 7vw;
+    }
 
-  .infoLow {
-    font-size: 1.5rem;
-  }
+    .infoHigh {
+        font-size: 10vw;
+    }
+}
 
-  .gridContainer div:nth-child(2),
-  .gridContainer div:nth-child(11) {
-    font-size: 3rem;
-  }
+@media screen and (max-width: 482px) {
+    .gridContainer {
+        grid-template-rows: 4vh 12vh 12vh 5vh 12vh 10vh;
+    }
 
-  .infoHigh {
-    font-size: 3.5rem;
-  }
+    .gridContainer div:nth-child(2), .gridContainer div:nth-child(11) {
+        font-size: 10vw;
+    }
+
+    .infoHigh {
+        font-size: 12vw;
+    }
+}
+
+@media screen and (max-width: 313px) {
+    .gridContainer {
+        grid-template-rows: 4vh 12vh 8vh 5vh 12vh 15vh;
+    }
+
+    .gridContainer div:nth-child(2), .gridContainer div:nth-child(11) {
+        font-size: 12vw;
+    }
+
+    .infoHigh {
+        font-size: 15vw;
+    }
 }
