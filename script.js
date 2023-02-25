@@ -7,8 +7,43 @@ const boxDays = document.querySelector('.days');
 const boxHours = document.querySelector('.hours');
 const boxMinutes = document.querySelector('.minutes');
 const boxSeconds = document.querySelector('.seconds');
+const boxGridContainer = document.querySelector('.gridContainer');
+const boxNewEvent = document.querySelector('.newEvent');
+const boxInfoHigh = document.querySelector('.infoHigh');
 
-let timeFuture = new Date('10/12/2026 00:00:00').getTime();
+const buttonNewEvent = document.querySelector('.buttonNewEvent');
+const buttonCancelEvent = document.querySelector('.buttonCancelEvent');
+const buttonSaveEvent = document.querySelector('.buttonSaveEvent');
+
+const inputDate = document.querySelector('.date');
+const inputEvent = document.querySelector('.event');
+
+buttonNewEvent.onclick = () => {
+    boxNewEvent.style.display = 'flex';
+    boxGridContainer.classList.add('lowBrightness');
+    buttonNewEvent.disabled = true;
+};
+
+buttonCancelEvent.onclick = () => { 
+    boxNewEvent.style.display = 'none';
+    boxGridContainer.classList.remove('lowBrightness');
+    buttonNewEvent.disabled = false;
+}
+
+buttonSaveEvent.onclick = () => { 
+    boxNewEvent.style.display = 'none';
+    boxGridContainer.classList.remove('lowBrightness');
+    buttonNewEvent.disabled = false;
+    
+
+    clearInterval(updateCountDown);
+    timeFuture = new Date(`${inputDate.value} 00:00:00`).getTime();
+    updateCountDown = setInterval(() => countDown(), SECOND);
+
+    boxInfoHigh.innerHTML = inputEvent.value;
+}
+
+let timeFuture = new Date('10-12-2026 00:00:00').getTime();
 
 const countDown = () => {
     let timeNow = new Date(Date.now()).getTime();
@@ -23,13 +58,4 @@ const printTimes = (differenceFutureNow) => {
     boxSeconds.innerHTML = Math.floor((differenceFutureNow % MINUTE) / SECOND);
 };
 
-setInterval(() => countDown(), SECOND);
-
-
-/* É UTILIZADO PARA MUDAR O TEMPO CONFORME O USUARIO DESEJA */
-function resetCountdown() {
-    clearInterval(x);
-    let date_end = document.form_main.date_end.value;
-    timeFuture = new Date(`${date_end} 00:00:00`).getTime();
-    x = setInterval(() => countDown(), second);
-}
+let updateCountDown = setInterval(() => countDown(), SECOND);

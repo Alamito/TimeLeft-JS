@@ -33,7 +33,7 @@ body {
         'infoEvent infoEvent infoEvent infoEvent infoEvent infoEvent';
 }
 
-.event {
+.boxEvent {
     grid-area: event;
     display: flex;
     justify-content: end;
@@ -203,6 +203,6 @@ body {
     cursor: pointer;
 }
 
-.LowBrightness {
+.lowBrightness {
     filter: brightness(70%);
 }

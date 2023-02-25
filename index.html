@@ -16,8 +16,8 @@
         <title>How Many Time Left</title>
     </head>
     <body>
-        <div class="gridContainer ">
-            <div class="event">
+        <div class="gridContainer">
+            <div class="boxEvent">
                 <button class="buttonNewEvent" type="button">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -35,14 +35,14 @@
             <div class="infoHigh">Formatura</div>
         </div>
         <div class="newEvent">
-            <label for="data">Data:</label>
-            <input type="date" id="data" name="data" /><br />
+            <label for="data">Date:</label>
+            <input class="date" type="date" /><br />
 
-            <label for="texto">Texto:</label>
-            <input type="text" id="texto" name="texto" /><br  />
+            <label for="texto">Event:</label>
+            <input class="event" type="text" /><br />
 
-            <button type="button" onclick="cancelar()">Cancel</button>
-            <button type="button" onclick="confirmar()">Confirm</button>
+            <button class="buttonCancelEvent" type="button">Cancel</button>
+            <button class="buttonSaveEvent" type="button">Confirm</button>
         </div>
 
         <script src="script.js"></script>
