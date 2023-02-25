@@ -10,6 +10,10 @@
     .infoHigh {
         font-size: 10vw;
     }
+
+    .newEvent {
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width: 683px) {

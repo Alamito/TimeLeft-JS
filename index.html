@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300&display=swap" rel="stylesheet">
-    <title>How Many Time Left</title>
-</head>
-<body>
-    <div class="gridContainer">
-        <div class="event">!</div>
-        <div class="infoLow">Faltam</div>
-        <div class="days"></div>
-        <div class="hours"></div>
-        <div class="minutes"></div>
-        <div class="seconds"></div>
-        <div class="infoLow">Days</div>
-        <div class="infoLow">Hours</div>
-        <div class="infoLow">Minutes</div>
-        <div class="infoLow">Seconds</div>
-        <div class="infoLow">For</div>
-        <div class="infoHigh">Formatura</div>
-    </div>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>How Many Time Left</title>
+    </head>
+    <body>
+        <div class="gridContainer ">
+            <div class="event">
+                <button class="buttonNewEvent" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="infoLow">Faltam</div>
+            <div class="days"></div>
+            <div class="hours"></div>
+            <div class="minutes"></div>
+            <div class="seconds"></div>
+            <div class="infoLow">Days</div>
+            <div class="infoLow">Hours</div>
+            <div class="infoLow">Minutes</div>
+            <div class="infoLow">Seconds</div>
+            <div class="infoLow">For</div>
+            <div class="infoHigh">Formatura</div>
+        </div>
+        <div class="newEvent">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" /><br />
+
+            <label for="texto">Texto:</label>
+            <input type="text" id="texto" name="texto" /><br  />
+
+            <button type="button" onclick="cancelar()">Cancel</button>
+            <button type="button" onclick="confirmar()">Confirm</button>
+        </div>
+
+        <script src="script.js"></script>
+        <script
+            src="https://kit.fontawesome.com/6004a7d73b.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
