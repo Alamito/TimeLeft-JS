@@ -3,7 +3,8 @@
         grid-template-rows: 4vh 12vh 25vh 12vh 12vh 15vh;
     }
 
-    .gridContainer div:nth-child(2), .gridContainer div:nth-child(11) {
+    .gridContainer div:nth-child(2),
+    .gridContainer div:nth-child(11) {
         font-size: 7vw;
     }
 
@@ -14,6 +15,10 @@
     .newEvent {
         width: 80vw;
     }
+
+    .buttonNewEvent {
+        width: 4vw;
+    }
 }
 
 @media screen and (max-width: 683px) {
@@ -21,12 +26,17 @@
         grid-template-rows: 4vh 12vh 15vh 7vh 12vh 15vh;
     }
 
-    .gridContainer div:nth-child(2), .gridContainer div:nth-child(11) {
+    .gridContainer div:nth-child(2),
+    .gridContainer div:nth-child(11) {
         font-size: 7vw;
     }
 
     .infoHigh {
         font-size: 10vw;
+    }
+
+    .buttonNewEvent {
+        width: 5vw;
     }
 }
 
@@ -35,12 +45,17 @@
         grid-template-rows: 4vh 12vh 12vh 5vh 12vh 10vh;
     }
 
-    .gridContainer div:nth-child(2), .gridContainer div:nth-child(11) {
+    .gridContainer div:nth-child(2),
+    .gridContainer div:nth-child(11) {
         font-size: 10vw;
     }
 
     .infoHigh {
         font-size: 12vw;
+    }
+
+    .buttonNewEvent {
+        width: 6vw;
     }
 }
 
@@ -49,11 +64,16 @@
         grid-template-rows: 4vh 12vh 8vh 5vh 12vh 15vh;
     }
 
-    .gridContainer div:nth-child(2), .gridContainer div:nth-child(11) {
+    .gridContainer div:nth-child(2),
+    .gridContainer div:nth-child(11) {
         font-size: 12vw;
     }
 
     .infoHigh {
         font-size: 15vw;
+    }
+
+    .buttonNewEvent {
+        width: 8vw;
     }
 }

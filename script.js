@@ -18,37 +18,14 @@ const buttonSaveEvent = document.querySelector('.buttonSaveEvent');
 const inputDate = document.querySelector('.date');
 const inputEvent = document.querySelector('.event');
 
-buttonNewEvent.onclick = () => {
-    boxNewEvent.style.display = 'flex';
-    boxGridContainer.classList.add('lowBrightness');
-    buttonNewEvent.disabled = true;
-};
-
-buttonCancelEvent.onclick = () => { 
-    boxNewEvent.style.display = 'none';
-    boxGridContainer.classList.remove('lowBrightness');
-    buttonNewEvent.disabled = false;
-}
-
-buttonSaveEvent.onclick = () => { 
-    boxNewEvent.style.display = 'none';
-    boxGridContainer.classList.remove('lowBrightness');
-    buttonNewEvent.disabled = false;
-    
-
-    clearInterval(updateCountDown);
-    timeFuture = new Date(`${inputDate.value} 00:00:00`).getTime();
-    updateCountDown = setInterval(() => countDown(), SECOND);
-
-    boxInfoHigh.innerHTML = inputEvent.value;
-}
-
-let timeFuture = new Date('10-12-2026 00:00:00').getTime();
-
 const countDown = () => {
     let timeNow = new Date(Date.now()).getTime();
     let differenceFutureNow = timeFuture - timeNow;
-    printTimes(differenceFutureNow);
+    if (differenceFutureNow < 0) { 
+        printTimes(0);
+    } else {
+        printTimes(differenceFutureNow);
+    }
 };
 
 const printTimes = (differenceFutureNow) => {
@@ -58,4 +35,30 @@ const printTimes = (differenceFutureNow) => {
     boxSeconds.innerHTML = Math.floor((differenceFutureNow % MINUTE) / SECOND);
 };
 
+buttonNewEvent.onclick = () => {
+    boxNewEvent.style.display = 'flex';
+    boxGridContainer.classList.add('lowBrightness');
+    buttonNewEvent.disabled = true;
+};
+
+buttonCancelEvent.onclick = () => {
+    boxNewEvent.style.display = 'none';
+    boxGridContainer.classList.remove('lowBrightness');
+    buttonNewEvent.disabled = false;
+};
+
+buttonSaveEvent.onclick = () => {
+    boxNewEvent.style.display = 'none';
+    boxGridContainer.classList.remove('lowBrightness');
+    buttonNewEvent.disabled = false;
+
+    clearInterval(updateCountDown);
+    timeFuture = new Date(`${inputDate.value} 00:00:00`).getTime();
+    updateCountDown = setInterval(() => countDown(), SECOND);
+
+    boxInfoHigh.innerHTML = inputEvent.value;
+};
+
+// First Execution
+let timeFuture = new Date('10-12-2026 00:00:00').getTime();
 let updateCountDown = setInterval(() => countDown(), SECOND);
