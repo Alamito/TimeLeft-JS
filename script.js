@@ -21,7 +21,11 @@ const inputEvent = document.querySelector('.event');
 const countDown = () => {
     let timeNow = new Date(Date.now()).getTime();
     let differenceFutureNow = timeFuture - timeNow;
-    if (differenceFutureNow < 0) { 
+    checkValidityDate(differenceFutureNow);
+};
+
+const checkValidityDate = (differenceFutureNow) => {
+    if (differenceFutureNow < 0) {
         printTimes(0);
     } else {
         printTimes(differenceFutureNow);
