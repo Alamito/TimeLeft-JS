@@ -31,6 +31,7 @@ body {
         '. infoDays infoHours infoMinutes infoSeconds .'
         'infoPara infoPara infoPara infoPara infoPara infoPara'
         'infoEvent infoEvent infoEvent infoEvent infoEvent infoEvent';
+    column-gap: 15px;
 }
 
 .boxEvent {
@@ -74,21 +75,18 @@ body {
     grid-area: infoDays;
     background-color: #343a40;
     color: #fff;
-    margin-right: 15px;
 }
 
 .gridContainer div:nth-child(8) {
     grid-area: infoHours;
     background-color: #343a40;
     color: #fff;
-    margin-right: 15px;
 }
 
 .gridContainer div:nth-child(9) {
     grid-area: infoMinutes;
     background-color: #343a40;
     color: #fff;
-    margin-right: 15px;
 }
 
 .gridContainer div:nth-child(10) {
@@ -122,6 +120,7 @@ body {
     font-size: 10vw;
     font-weight: bold;
     border-radius: 15px 15px 0 0;
+    width: 100%;
 }
 
 .days,
