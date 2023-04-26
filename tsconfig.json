@@ -1,0 +1,8 @@
+{
+    "include": ["src/*.ts"],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es6",
+        "outFile": "./build/app.js"
+    }
+}
