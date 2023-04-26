@@ -1,23 +1,35 @@
 @media screen and (max-width: 992px) {
     .title-first {
+        /* padding-top: 160px; */
         font-size: 3em;
     }
 
     .title-mid {
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     .title-last {
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     .time {
-        height: 25vh;
-        font-size: 3em;
+        height: 20vh;
+        font-size: 2.5em;
     }
 
-    .desc-time {
-        font-size: 2.1em;
+    .description {
+        height: 32%;
+        font-size: 0.7em;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-end-end-radius: 0px;
+        border-end-start-radius: 0px;
     }
 }
 
@@ -39,22 +51,33 @@
         font-size: 2.8em;
     }
 
-    .desc-time {
-        font-size: 1.8em;
+    .description {
+        height: 32%;
+        font-size: 0.6em;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-end-end-radius: 25px;
+        border-end-start-radius: 25px;
     }
 }
 
 @media screen and (max-width: 680px) {
     .title-first {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .title-mid {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .title-last {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .time {
@@ -72,20 +95,20 @@
     .seconds {
         border-start-end-radius: 10px;
         border-start-start-radius: 10px;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
     }
 
-    .days-title,
-    .hours-title,
-    .minutes-title,
-    .seconds-title {
+    .description {
+        height: 32%;
+        font-size: 0.6em;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-} 
+}
 
 @media screen and (max-width: 576px) {
     .title-first {
-        /* height: 15vh; */
         font-size: 3em;
     }
 
@@ -104,23 +127,9 @@
         font-size: 1.5em;
     }
 
-    .desc-time {
-        /* height: 5vh; */
-        font-size: 1em;
-    }
-
-    .days,
-    .hours,
-    .minutes,
-    .seconds {
-        border-start-end-radius: 10px;
-        border-start-start-radius: 10px;
-    }
-
-    .days-title,
-    .hours-title,
-    .minutes-title,
-    .seconds-title {
+    .description {
+        height: 32%;
+        font-size: 0.6em;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
