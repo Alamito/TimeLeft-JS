@@ -1,11 +1,39 @@
-.title {
+* {
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.title-first {
+    /* height: 20vh; */
+    font-size: 3em;
+}
+
+.title-mid {
+    /* height: 15vh; */
+    font-size: 3em;
+}
+
+.title-last {
+    /* height: 10vh; */
     font-size: 3em;
 }
 
 .time {
-    font-size: 3em;
+    height: 30vh;
+    font-size: 3.5em;
 }
 
 .desc-time {
+    /* height: 10vh; */
     font-size: 3em;
 }
+
+.days, .hours, .minutes, .seconds {
+    border-start-end-radius: 25px;
+    border-start-start-radius: 25px;
+}
+
+.days-title, .hours-title, .minutes-title, .seconds-title {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}   
+

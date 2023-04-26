@@ -1,41 +1,127 @@
 @media screen and (max-width: 992px) {
-    .title {
+    .title-first {
+        font-size: 3em;
+    }
+
+    .title-mid {
+        font-size: 3em;
+    }
+
+    .title-last {
         font-size: 3em;
     }
 
     .time {
-        font-size: 2em;
+        height: 25vh;
+        font-size: 3em;
     }
 
     .desc-time {
-        font-size: 2em;
+        font-size: 2.1em;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .title {
-        font-size: 2em;
+    .title-first {
+        font-size: 3em;
+    }
+
+    .title-mid {
+        font-size: 3em;
+    }
+
+    .title-last {
+        font-size: 3em;
     }
 
     .time {
-        font-size: 1em;
+        height: 18vh;
+        font-size: 2.8em;
     }
 
     .desc-time {
-        font-size: 1em;
+        font-size: 1.8em;
     }
 }
 
-@media screen and (max-width: 576px) {
-    .title {
-        font-size: 1em;
+@media screen and (max-width: 680px) {
+    .title-first {
+        font-size: 2.5em;
+    }
+
+    .title-mid {
+        font-size: 2.5em;
+    }
+
+    .title-last {
+        font-size: 2.5em;
     }
 
     .time {
-        font-size: 1em;
+        height: 15vh;
+        font-size: 2em;
     }
 
     .desc-time {
-        font-size: 0.6em;
+        font-size: 1.2em;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        border-start-end-radius: 10px;
+        border-start-start-radius: 10px;
+    }
+
+    .days-title,
+    .hours-title,
+    .minutes-title,
+    .seconds-title {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+} 
+
+@media screen and (max-width: 576px) {
+    .title-first {
+        /* height: 15vh; */
+        font-size: 3em;
+    }
+
+    .title-mid {
+        /* height: 15vh; */
+        font-size: 3em;
+    }
+
+    .title-last {
+        /* height: 10vh; */
+        font-size: 3em;
+    }
+
+    .time {
+        /* height: 15vh; */
+        font-size: 1.5em;
+    }
+
+    .desc-time {
+        /* height: 5vh; */
+        font-size: 1em;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        border-start-end-radius: 10px;
+        border-start-start-radius: 10px;
+    }
+
+    .days-title,
+    .hours-title,
+    .minutes-title,
+    .seconds-title {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
