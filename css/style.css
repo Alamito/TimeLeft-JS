@@ -1,23 +1,19 @@
 * {
-    /* font-family: 'Martel Sans', sans-serif; */
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 0.05em;
 }
 
 .title-first {
-    /* height: 20vh; */
     font-size: 4em;
     text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
 }
 
 .title-mid {
-    /* height: 15vh; */
     font-size: 4em;
     text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
 }
 
 .title-last {
-    /* height: 10vh; */
     font-size: 4.5em;
     text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
 }
