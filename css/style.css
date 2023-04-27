@@ -1,20 +1,22 @@
 * {
-    font-family: 'Martel Sans', sans-serif;
+    /* font-family: 'Martel Sans', sans-serif; */
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .05em;
 }
 
 .title-first {
     /* height: 20vh; */
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .title-mid {
     /* height: 15vh; */
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .title-last {
     /* height: 10vh; */
-    font-size: 3em;
+    font-size: 4.5em;
 }
 
 .time {
@@ -29,8 +31,8 @@
 .seconds {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-border-end-end-radius: 25px;
-        border-end-start-radius: 25px;
+    border-end-end-radius: 25px;
+    border-end-start-radius: 25px;
 }
 
 .description {
