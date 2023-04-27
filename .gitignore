@@ -1,4 +1,2 @@
 node_modules
-src
-*.ts
-script.js
+./*.js
