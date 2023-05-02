@@ -3,40 +3,15 @@
     letter-spacing: 0.05em;
 }
 
-.title-first {
-    font-size: 4em;
-    text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
+.border {
+    border-radius: 25px;
 }
 
-.title-mid {
-    font-size: 4em;
-    text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
-}
-
-.title-last {
-    font-size: 4.5em;
-    text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
-}
-
-.time {
-    height: 40vh;
-    width: 100vw;
-    font-size: 4em;
-}
-
-.days,
-.hours,
-.minutes,
-.seconds {
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-end-end-radius: 25px;
-    border-end-start-radius: 25px;
-}
-
-.description {
-    height: 32%;
-    width: 100%;
-    border-bottom-left-radius: 25px;
+.border .smalltext {
     border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.shadow {
+    text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
 }
